@@ -5,6 +5,13 @@ function mostrar(e) {
         e.style.color = "rgb(225, 225, 0)";
         document.body.style.background = 'rgb(10, 10, 10)';
         document.querySelector('#userName').style.color = '#fff';
+        document.querySelector('#gozoso').style.color = '#fff';
+        document.querySelector('#luminoso').style.color = '#fff';
+        document.querySelector('#doloroso').style.color = '#fff';
+        document.querySelector('#glorioso').style.color = '#fff';
+        document.querySelector('#rosario').style.color = '#fff';
+        document.querySelector('#footer').style.color = '#fff';
+
 
         let links = document.querySelectorAll('.link');
         // Pega apenas o primeiro do array
@@ -28,6 +35,13 @@ function mostrar(e) {
         e.style.color = "#585858";
         document.body.style.background = 'rgb(243, 242, 242)';
         document.querySelector('#userName').style.color = 'rgb(99, 99, 99)';
+        document.querySelector('#gozoso').style.color = 'rgb(99, 99, 99)';
+        document.querySelector('#luminoso').style.color = 'rgb(99, 99, 99)';
+        document.querySelector('#doloroso').style.color = 'rgb(99, 99, 99)';
+        document.querySelector('#glorioso').style.color = 'rgb(99, 99, 99)';
+        document.querySelector('#rosario').style.color = 'rgb(99, 99, 99)';
+        document.querySelector('#footer').style.color = 'rgb(99, 99, 99)';
+
 
         let links = document.querySelectorAll('.link');
         // Pega apenas o primeiro do array

@@ -1,49 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt-br">	
+
+<html>
+
 <head>
-	<meta charset="utf-8"/>
-	<link rel="shortcut icon" href="imagens/google-chrome-icon.ico"/>
-	<title>Terço Diário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Seu Perfil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="icon" href="../../images/favicon.png" type="image/x-icon" />
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </head>
+
 <body>
-    <div>
-        <h2>
-            Oração do Santo Terço
-        </h2>
-        <br>
+    <i onclick="mostrar(this)" class="fa fa-moon-o fa-2x night_mode"></i>
+
+    <img id="userPhoto" src="assets/imagens/maria.jpg" alt="User Photo">
+
+    <spam id="userName">Oração do Santo Terço</spam>
+
+    <div id="links">
+        <a class="link" href="#" onclick="toggleAudio1()" style="border-radius: 25px;">Mistérios Gozosos
+            <audio id="audio-misterios-gozosos" src="media/santo-terço-misterios-gozosos.mp3">
+                <script>
+                    var gozosos = document.getElementById("audio-misterios-gozosos");
+                    
+                    function toggleAudio1() {
+                        if (gozosos.paused) {
+                            gozosos.play();
+                        } else {
+                            gozosos.pause();
+                        }
+                    }
+                </script>
+            </audio>
+        </a>
+        <a class="link" href="#" onclick="toggleAudio2()" style="border-radius: 25px;">Mistérios Luminosos
+            <audio id="audio-misterios-luminosos" src="media/santo-terco-misterios-luminosos .mp3">
+                <script>
+                    var luminosos = document.getElementById("audio-misterios-luminosos");
+                    
+                    function toggleAudio2() {
+                        if (luminosos.paused) {
+                            luminosos.play();
+                        } else {
+                            luminosos.pause();
+                        }
+                    }
+                </script>
+            </audio>
+        </a>
+        <a class="link" href="#" onclick="toggleAudio3()" style="border-radius: 25px;">Mistérios Dolorosos
+            <audio id="audio-misterios-dolorosos" src="media/santo-terco-misterios-dolorosos.mp3">
+                <script>
+                    var dolorosos = document.getElementById("audio-misterios-dolorosos");
+                    
+                    function toggleAudio3() {
+                        if (dolorosos.paused) {
+                            dolorosos.play();
+                        } else {
+                            dolorosos.pause();
+                        }
+                    }
+                </script>
+            </audio>
+        </a>
+        <a class="link" href="#" onclick="toggleAudio4()" style="border-radius: 25px;">Mistérios Gloriosos
+            <audio id="audio-misterios-gloriosos" src="media/santo-terco-misterios-gloriosos.mp3">
+                <script>
+                    var gloriosos = document.getElementById("audio-misterios-gloriosos");
+                    
+                    function toggleAudio4() {
+                        if (gloriosos.paused) {
+                            gloriosos.play();
+                        } else {
+                            gloriosos.pause();
+                        }
+                    }
+                </script>
+            </audio>
+        </a>
+        <a class="link" href="#" onclick="toggleAudio5()" style="border-radius: 25px;">Santo Rosário
+            <audio id="audio-santo-rosario" src="media/santo-rosario.mp3">
+                <script>
+                    var rosario = document.getElementById("audio-santo-rosario");
+                    
+                    function toggleAudio5() {
+                        if (rosario.paused) {
+                            rosario.play();
+                        } else {
+                            rosario.pause();
+                        }
+                    }
+                </script>
+            </audio>
+        </a>
     </div>
-    <div id="tv-radio" class="player">
-        <h3>Mistérios Gozosos</h3>
-        <h6>Segundas-feiras e sábados</h6>
-            <audio id="musica" style="border-radius: 10px;" controls="controls">
-                <source src="media/santo-terço-misterios-gozosos.mp3" type="audio/mpeg">
-                Desculpe, mas não foi possível carregar o áudio.
-            </audio>
-        <h3>Mistérios Luminosos</h3>
-        <h6>Quintas-feiras</h6>
-            <audio id="musica" style="border-radius: 10px;" controls="controls">
-                <source src="media/santo-terco-misterios-luminosos .mp3" type="audio/mpeg"/>
-                Desculpe, mas não foi possível carregar o áudio.
-            </audio>
-        <h3>Mistérios Dolorosos</h3>
-        <h6>Terças-feiras e Quintas-feiras</h6>
-            <audio id="musica" style="border-radius: 10px;" controls="controls">
-                <source src="media/santo-terco-misterios-dolorosos.mp3" type="audio/mpeg"/>
-                Desculpe, mas não foi possível carregar o áudio.
-            </audio>
-        <h3>Mistérios Gloriosos</h3>
-        <h6>Quartas-feiras e Domingos</h6>
-            <audio id="musica" style="border-radius: 10px;" controls="controls">
-                <source src="media/santo-terco-misterios-gloriosos.mp3" type="audio/mpeg"/>
-                Desculpe, mas não foi possível carregar o áudio.
-            </audio>
-        <h3>Santo Rosário</h3>
-            <audio id="musica" style="border-radius: 10px; margin-bottom: 20px;" controls="controls">
-                <source src="media/santo-rosario.mp3" type="audio/mpeg"/>
-                Desculpe, mas não foi possível carregar o áudio.
-            </audio>
+
+    <div class="footer">
+        <a href="#" target="_blank">
+            <i style="line-height: 38px;" class="fa fa-instagram circulo" aria-hidden="true"></i>
+        </a>
+        <a href="#" target="_blank">
+            <i style="line-height: 38px;" class="fa fa-facebook-f circulo" aria-hidden="true"></i>
+        </a>
+        <a href="#" target="_blank">
+            <i style="line-height: 38px;" class="fa fa-linkedin circulo" aria-hidden="true"></i>
+        </a>
+        <a href="#" target="_blank">
+            <i style="line-height: 38px;" class="fa fa-whatsapp circulo" aria-hidden="true"></i>
+        </a>
     </div>
-<footer id="rodape">
-    <script type="text/javascript">document.write(new Date().getFullYear());</script> &copy;</a> Feito com <span class="love">🕊️</span> por Thiago Peres</span></footer>
+
+    <!-- Javascript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="index.js"></script>
 </body>
+
 </html>

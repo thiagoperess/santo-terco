@@ -95,3 +95,27 @@ body {
 .night_mode:hover {
     cursor: pointer;
 }
+
+.love {
+    display:inline-block;
+    position:relative;
+    top:.1em;
+    font-size:1.8em;
+    color:#f40000;
+    transform:scale(.9);
+    animation:love .5s linear infinite alternate-reverse;
+   }
+   
+   @keyframes love {
+    to {
+     transform:scale(1.1)
+    }
+   }
+
+h3 {
+    font-size: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
